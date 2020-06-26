@@ -92,10 +92,43 @@ else:
             elif card_1 == 13:
             face_1 =('King')
         card_2 = random.randint(1,13)
-
+            if card_2 == 1:
+            face_2 = 'Ace'
+            elif card_2 == 2:
+            face_2 =('Two')
+            elif card_2 == 3:
+            face_2 = ('Three')
+            elif card_2 == 4:
+            face_2 =('Four')        
+            elif card_2 == 5:
+            face_2 =('Five')        
+            elif card_2 == 6:
+            face_2 =('Six')       
+            elif card_2 == 7:
+            face_2 =('Seven')        
+            elif card_2 == 8:
+            face_2 =('Eight')        
+            elif card_2 == 9:
+            face_2 =('Nine')
+            elif card_2 == 10:
+            face_2 =('Ten')        
+            elif card_2 == 11:
+            face_2 =('Jack')        
+            elif card_2 == 12:
+            face_2 =('Queen')     
+            elif card_2 == 13:
+            face_2 =('King')
         #Print Players' names and cards
-        print(Player_1, 'drew a', face_1)
-        print(Player_2, 'drew a', face_2)
+        print(Player_1, ' drew a ', face_1)
+        print(Player_2, ' drew a ', face_2)
+        
+        #Determine Winner
+        if card_1 > card_2:
+        print (user_1, ' is the winner!')
+        elif card_2 > card_1:
+        print (user_2, ' is the winner!')
+        else:
+        print ("It's a tie!")
 
     #Sentinel Check
     print("GAME MENU")

@@ -217,6 +217,8 @@ def high_card():
     # Deal two cards: Generate random card between 1 and 13
     player1_card = card_Nolan.Card()
     player2_card = card_Nolan.Card()
+    player1_card.deal()
+    player2_card.deal()
 
     # Display the cards
     print("Card for ", player1, ": ", player1_card, end=' ')
@@ -249,14 +251,19 @@ def deal_hand():
 
     # Deal a five card hand: Generate 5 random cards between 1 and 13
     Card1 = card_Nolan.Card()
+    Card1.deal()
     hand.append(Card1)
     Card2 = card_Nolan.Card()
+    Card2.deal()
     hand.append(Card2)
     Card3 = card_Nolan.Card()
+    Card3.deal()
     hand.append(Card3)
     Card4 = card_Nolan.Card()
+    Card4.deal()
     hand.append(Card4)
     Card5 = card_Nolan.Card()
+    Card5.deal()
     hand.append(Card5)
 
     # Display the 5-card hand
